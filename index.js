@@ -177,11 +177,19 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(flavorsArray, promotional){
+  const filteredArray = [];
+  for(let i = 0; i < flavorsArray.length; i++) {
+    if(flavorsArray[i].includes(promotional)) {
+      filteredArray.push(flavorsArray[i]);
+    } else {
+      continue;
+    }
+  }
+  return filteredArray;
 }
 
-
+console.log(filterByWord(originalFlavors, "Chocolate"));
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
