@@ -64,7 +64,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(flavorsArray){
-  if(flavorsArray.length = 31) {
+  if(flavorsArray.length === 31) {
     return true;
   } else {
     return false;
@@ -86,7 +86,7 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(flavorsArray, newFlavor){
+function addFlavor(flavorsArray, newFlavor) {
   flavorsArray.unshift(newFlavor);
   return flavorsArray;
 }
